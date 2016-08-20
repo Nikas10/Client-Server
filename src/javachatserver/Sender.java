@@ -70,7 +70,7 @@ public class Sender extends Thread{
                                 out.flush(); // заставляем поток закончить передачу данных.
                                 try {
                                     //HERE COMES JPA TEST PART
-                                    entitymanager.getTransaction( ).begin( );		
+                                    /*entitymanager.getTransaction( ).begin( );		
                                     Msglog message = new Msglog();
                                     message.setId(msgid++);
                                     message.setSender(msg.getUsrID());
@@ -78,7 +78,7 @@ public class Sender extends Thread{
                                     message.setMessage(msg.getUsrMsg());
                                     message.setDate(msg.getMsgDate());
                                     entitymanager.persist(message);
-                                    entitymanager.getTransaction( ).commit( ); 
+                                    entitymanager.getTransaction( ).commit( );*/ 
                                    // Msglog test = entitymanager.find(Msglog.class, 1);
                                     //System.out.println(test.getMessage());
                                       
